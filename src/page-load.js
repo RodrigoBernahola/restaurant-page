@@ -29,23 +29,14 @@ class DOMGenerator {
 }
 
 
-//Crear una etiqueta de imagen con su src y agregarla al div
-//Crear h1 y agregarlo al div con su contenido
-//Crear un p con su contenido y agregarlo al div
-
 export default function pageLoad() {
 
     const domInstance = new DOMGenerator();
     const contentDiv = document.querySelector('#content');
+    const paraText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat nesciunt fugiat officia expedita ex voluptatem quibusdam commodi, numquam praesentium laborum in ipsam, voluptatum soluta architecto aut odit et sit deleniti?';
 
     domInstance.createImg(contentDiv, backgroundImage);
     domInstance.createHeadline(contentDiv, 'Restaurant Page');
-    
-    const paraText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat nesciunt fugiat officia expedita ex voluptatem quibusdam commodi, numquam praesentium laborum in ipsam, voluptatum soluta architecto aut odit et sit deleniti?';
-
     domInstance.createParagraph(contentDiv, paraText);
-
-    console.log("pepe");
-
 
 }
